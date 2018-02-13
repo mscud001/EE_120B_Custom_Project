@@ -38,6 +38,8 @@ void displayHighScoreAndCurrentScore()
 
 int main(void)
 {
+	DDRA = 0x00; PORTA = 0xFF; // SNES input lines
+	DDRB = 0xFF; PORTB = 0x00; // Arduino output lines
 	DDRC = 0xFF; PORTC = 0x00; // LCD data lines
 	DDRD = 0xFF; PORTD = 0x00; // LCD control lines
 	
